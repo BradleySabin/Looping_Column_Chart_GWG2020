@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>D3 Looping</title>
+		<script type="text/javascript" src="https://d3js.org/d3.v4.js"></script>
+		<style type="text/css">
+			p {
+				font-family: Helvetica, sans-serif;
+				font-size: 22px;
+				color: rgb(4,162,140);
+				text-align: center;
+			}
+
+			h2 {
+				font-family: Helvetica, sans-serif;
+				font-size: 15px;
+				color: #56595d;
+				text-align: center;
+			}
+
+			.xaxis {
+	            font-size: 14px;
+				color: #57595D;
+				font-family: arial;
+	        }
+        
+	    	.xaxis path,
+	        .xaxis line {
+	            fill: none;
+	            display: none;
+	        }
+
+	        .yaxis {
+	            font-size: 14px;
+				color: #57595D;
+				font-family: arial;
+	        }
+        
+	    	.xaxis path,
+	        .xaxis line {
+	            fill: none;
+	            display: none;
+	        }
+
+			#myChart {
+				svg{
+					align-content: center;
+				}
+			}
+
+
+		</style>
+	</head>
+	<body>
+		<div>
+			<h2> White workers have a larger percentage of their working population in high-level jobs than other races</h2>
+		</div>	
+
+		<div id="JobLevelLabel" style="text-align:center;"> 
+			<p><span id="value"></span></p>
+		</div>
+
+		<div id="myChart" style="text-align:center;"> 
+		</div>
+
+		<script type="text/javascript" src="LoopingColumnChart.js"> </script>
+	</body>
+</html>
